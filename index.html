@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MISC - The Code Goes Hard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700;900&family=Fira+Code&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #121212;
+            --secondary: #ff4d00;
+            --accent: #00c4ff;
+            --light: #f8f8f8;
+            --dark: #0a0a0a;
+            --code-bg: #1e1e1e;
+        }
+
+        body {
+            font-family: 'Urbanist', sans-serif;
+            background-color: var(--primary);
+            color: var(--light);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        h1, h2, h3 {
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            font-size: 4rem;
+            background: linear-gradient(45deg, var(--secondary), var(--accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            color: var(--light);
+            margin-top: 3rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 3px solid var(--secondary);
+        }
+
+        .tagline {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .example-card {
+            background: rgba(30, 30, 30, 0.8);
+            border-left: 4px solid var(--secondary);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .example-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .language-tag {
+            background: var(--secondary);
+            color: var(--dark);
+            padding: 0.3rem 0.8rem;
+            font-weight: 700;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+
+        pre {
+            background-color: var(--code-bg);
+            color: var(--light);
+            padding: 1rem;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: 'Fira Code', monospace;
+            tab-size: 4;
+        }
+
+        code {
+            font-family: 'Fira Code', monospace;
+        }
+
+        .developer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .dev-bio-box {
+            background: rgba(30, 30, 30, 0.8);
+            border: 2px solid var(--secondary);
+            padding: 1.5rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .dev-bio-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(255, 77, 0, 0.2);
+            border-color: var(--accent);
+        }
+        
+        .dev-name {
+            color: var(--accent);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 0.5rem;
+        }
+        
+        .dev-role {
+            color: var(--secondary);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+        
+        .dev-bio {
+            color: var(--light);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 0;
+            margin-top: 3rem;
+            border-top: 1px solid rgba(255, 77, 0, 0.3);
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--secondary);
+            color: var(--dark);
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px;
+            margin: 0.5rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: var(--accent);
+            color: var(--dark);
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .developer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>MISC</h1>
+            <p class="tagline">The Code Goes Hard</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="about">
+            <h2>Straight Outta Compiler</h2>
+            <p>MISC is a unique programming language that fuses the technical accuracy of coding with the vibrant spirit of hip-hop culture. It takes cues from the ad libs, producer tags, and memorable phrases of artists such as Travis Scott and Metro Boomin, transforming the coding journey into a more lively and expressive experience. In MISC, traditional programming terminology is replaced with hip-hop-inspired terms—using "shout" for "print," "letsgo" in place of "let," and "ifLit" for conditional statements. This approach not only makes programming more captivating but also connects the worlds of technology and urban artistry, demonstrating that code can possess as much character as a chart-topping rap verse.
+
+            MISC retains all the capabilities of a robust programming language while infusing hip-hop's vibrancy into its syntax and structure. Features such as static typing, first-class functions, and pattern matching are presented through a musical lens, making intricate concepts easier to grasp and remember. The design philosophy of the language acknowledges that, similar to a great beat, effective code requires both technical skill and creative expression. By merging the logical discipline of programming with the spontaneous energy of hip-hop, MISC provides developers with a refreshing viewpoint that transforms coding from a task into an artistic endeavor.
+              </p>
+        </section>
+
+        <section id="features">
+            <h2>Features</h2>
+            <ul>
+                <li>Static Typing</li>
+                <li>First-Class Functions</li>
+                <li>Pattern Matching</li>
+                <li>Object-Oriented Programming</li>
+                <li>Loops and Nesting</li>
+                <li>Tuples</li>
+            </ul>
+        </section>
+
+        <section id="examples">
+            <h2>🔥 Examples 🔥</h2>
+
+            <div class="example-card">
+                <div class="example-header">
+                    <h3>Printing Output</h3>
+                    <span class="language-tag">MISC vs JavaScript</span>
+                </div>
+                <pre><code>// JavaScript
+console.log("Hello, world!");
+
+// MISC
+shout "Hello, world!";</code></pre>
+            </div>
+
+            <div class="example-card">
+                <div class="example-header">
+                    <h3>Variable Declaration</h3>
+                    <span class="language-tag">MISC vs JavaScript</span>
+                </div>
+                <pre><code>// JavaScript
+let name = "Travis Scott";
+const age = 28;
+
+// MISC
+letsgo name = "Travis Scott";
+const age = 28;</code></pre>
+            </div>
+
+            <div class="example-card">
+                <div class="example-header">
+                    <h3>Arrays</h3>
+                    <span class="language-tag">MISC vs JavaScript</span>
+                </div>
+                <pre><code>// JavaScript
+let artists = ["Travis Scott", "Metro Boomin", "The Weeknd"];
+
+// MISC
+letsgo artists = ["Travis Scott", "Metro Boomin", "The Weeknd"];</code></pre>
+            </div>
+
+            <div class="example-card">
+                <div class="example-header">
+                    <h3>Conditional Logic</h3>
+                    <span class="language-tag">MISC vs JavaScript</span>
+                </div>
+                <pre><code>// JavaScript
+if (temperature > 100) {
+  console.log("It's really hot!");
+}
+
+// MISC
+ifLit (temperature > 100) {
+  shout "It's really hot!";
+}</code></pre>
+            </div>
+
+            <div class="example-card">
+                <div class="example-header">
+                    <h3>Loops</h3>
+                    <span class="language-tag">MISC vs JavaScript</span>
+                </div>
+                <pre><code>// JavaScript
+for (let i = 0; i < 10; i++) {
+  console.log(i);
+}
+
+// MISC
+4x4 (let i = 0; i < 10; i++) {
+  shout i;
+}</code></pre>
+            </div>
+        </section>
+
+        <section id="team">
+            <h2>🚀 The Producers 🚀</h2>
+            <div class="developer-grid">
+                <div class="dev-bio-box">
+                    <div class="dev-name">Mathew Martel</div>
+                    <div class="dev-role"></div>
+                    <div class="dev-bio">
+                        Los Angeles, California.
+                        Computer Science Major,
+                        Class of 2025
+                    </div>
+                </div>
+                
+                <div class="dev-bio-box">
+                    <div class="dev-name">Isaiah Pajarillo</div>
+                    <div class="dev-role"></div>
+                    <div class="dev-bio">
+                        Foster City, california. Computer Science Major, Class of 2026
+                    </div>
+                </div>
+                
+                <div class="dev-bio-box">
+                    <div class="dev-name">Stanley Nicholson</div>
+                    <div class="dev-role"></div>
+                    <div class="dev-bio">
+                        Los Angeles, California. Computer Science Major, Class of 2025
+                    </div>
+                </div>
+                
+                <div class="dev-bio-box">
+                    <div class="dev-name">Chris Chatel</div>
+                    <div class="dev-role"></div>
+                    <div class="dev-bio">
+                        Whittier, California. Computer Science Major and Business Administration Minor, Class of 2026
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="links">
+                <a href="https://github.com/ChrisChatel/MISC.git" class="btn">GitHub Repo</a>
+                <a href="#" class="btn">Documentation</a>
+            </div>
+            <p>MISC © 2025 - The Code Goes Hard</p>
+        </div>
+    </footer>
+</body>
+</html>
